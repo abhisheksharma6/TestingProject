@@ -26,7 +26,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ForgetPasswordActivity extends AppCompatActivity implements View.OnClickListener {
-	String Test;
+	String a;
     private Pattern pattern;
     ProgressDialog mProgressDialog;
     String responsemessage, message, email;
