@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        card_view:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/shoppingCartlTitle"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/shoppingCartlTitleImage"
+                android:text="Wrangler Brand jeans"
+                android:textAllCaps="false"
+                android:textColor="#3D4A53"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/typeLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shoppingCartlTitle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/shoppingCartlTitleImage"
+                android:text="Type: "
+                android:textAllCaps="false"
+                android:textColor="#3D4A53"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/typeRemote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shoppingCartlTitle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/typeLocal"
+                android:text="jean "
+                android:textAllCaps="false"
+                android:textColor="#a79999"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/productCodeLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/typeLocal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/shoppingCartlTitleImage"
+                android:text="Product Code: "
+                android:textAllCaps="false"
+                android:textColor="#3D4A53"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/productCodeRemote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/typeRemote"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/productCodeLocal"
+                android:text="54878448 "
+                android:textAllCaps="false"
+                android:textColor="#a79999"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/priceLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productCodeLocal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/shoppingCartlTitleImage"
+                android:text="Price: "
+                android:textAllCaps="false"
+                android:textColor="#3D4A53"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/priceRemote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productCodeRemote"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/priceLocal"
+                android:text="$555"
+                android:textAllCaps="false"
+                android:textColor="#a79999"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/subtotalLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/priceLocal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/shoppingCartlTitleImage"
+                android:text="SubTotal:"
+                android:textAllCaps="false"
+                android:textColor="#3D4A53"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/subtotalRemote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/priceRemote"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/subtotalLocal"
+                android:text="$555"
+                android:textAllCaps="false"
+                android:textColor="#a79999"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subtotalLocal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/shoppingCartlTitleImage"
+                android:text="Size:"
+                android:textAllCaps="false"
+                android:textColor="#3D4A53"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:id="@+id/shoppingCartSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subtotalLocal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/Size"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="#3D4A53"
+                android:textSize="13sp"
+                />
+
+
+
+            <ImageButton
+                android:id="@+id/minusButton"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/shoppingCartlTitleImage"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/plus_minus_button_shape"
+                android:padding="8dp"
+                card_view:srcCompat="@drawable/minus_icon" />
+
+            <TextView
+                android:id="@+id/itemCount"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/shoppingCartlTitleImage"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/minusButton"
+                android:background="@drawable/edbg"
+                android:gravity="center"
+                android:text="3"
+                android:textAllCaps="false"
+                android:textColor="#484545"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@+id/plusButton"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/shoppingCartlTitleImage"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/itemCount"
+                android:background="@drawable/plus_minus_button_shape"
+                android:padding="30dp"
+                card_view:srcCompat="@drawable/plus_icon" />
+
+            <ImageButton
+                android:id="@+id/removeButton"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/cross_button_shape"
+                android:padding="12dp"
+                android:src="@drawable/cross_icon" />
+
+            <ImageView
+                android:id="@+id/shoppingCartlTitleImage"
+                android:layout_width="113dp"
+                android:layout_height="120dp"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/jean" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
